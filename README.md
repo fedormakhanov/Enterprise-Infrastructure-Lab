@@ -1,8 +1,12 @@
 # Enterprise-Infrastructure-Lab
 Enterprise-grade IT infrastructure lab featuring Windows Server 2022, Cisco Catalyst 3650, VLAN/L3 routing, ACL security, Hyper‑V virtualization, Syslog/SNMP monitoring, and full documentation.
-🛰️ Project Overview
 
-This repository contains a complete enterprise‑style IT infrastructure implemented in a home lab environment.
+
+---
+
+Project Overview
+
+This repository contains a complete enterprise-style IT infrastructure implemented in a home lab environment.
 It demonstrates practical skills in:
 
 • Windows Server administration
@@ -15,7 +19,7 @@ It demonstrates practical skills in:
 
 ---
 
-📡 Technology Stack
+Technology Stack
 
 • Windows Server 2022
 • Cisco Catalyst 3650 (IOS XE)
@@ -31,9 +35,9 @@ It demonstrates practical skills in:
 
 ---
 
-🗂️ Repository Structure
+Repository Structure
 
-• /Windows-Server/ — Windows Server configuration & projects
+• /Windows-Server/ — Windows Server configuration and projects
 • /Cisco-3650/ — Cisco IOS XE configs and network projects
 • /Monitoring/ — Syslog, SNMP, Zabbix
 • /Topology/ — network diagrams and architecture
@@ -43,7 +47,7 @@ It demonstrates practical skills in:
 
 ---
 
-🧩 Windows Server Projects
+Windows Server Projects
 
 • Active Directory Domain Services
 • DNS
@@ -58,7 +62,7 @@ It demonstrates practical skills in:
 
 ---
 
-🔌 Cisco Catalyst 3650 Projects
+Cisco Catalyst 3650 Projects
 
 • VLAN Segmentation
 • Inter‑VLAN Routing (SVI)
@@ -71,7 +75,7 @@ It demonstrates practical skills in:
 
 ---
 
-🖧 Network Topology
+Network Topology
 
 Enterprise network architecture:
 
@@ -84,7 +88,7 @@ Enterprise network architecture:
 
 ---
 
-📄 Documentation
+Documentation
 
 Located in /Documentation:
 
@@ -97,7 +101,7 @@ Located in /Documentation:
 
 ---
 
-🎯 Project Goals
+Project Goals
 
 • Build a realistic enterprise infrastructure
 • Demonstrate network engineering and sysadmin skills
@@ -108,14 +112,15 @@ Located in /Documentation:
 
 ---
 
-👤 Author
+Author
 
 pishi — Network Engineer / SysAdmin (Home Lab)
 
 ---
 
-🏁 Status
+Status
 
 Project is under active development.
 
 ---
+
