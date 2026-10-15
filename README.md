@@ -19,7 +19,7 @@ for IT Support / Junior SysAdmin roles.
 ---
 
 ## Organizational Unit Structure
-
+"""
 corp.local
 └── Corp
 ├── Corp Users
@@ -27,7 +27,7 @@ corp.local
 ├── Admins
 ├── Servers
 └── Service Accounts
-
+"""
 ---
 
 ## Users & Groups
