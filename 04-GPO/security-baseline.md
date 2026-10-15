@@ -1,6 +1,20 @@
 # Security Baseline (Corp Computers)
 
-- Windows Defender Firewall: Enabled
+Applied to: Corp Computers OU
+
+## Firewall
+
+- Windows Defender Firewall: Enabled (Domain Profile)
+
+## SMB Hardening
+
 - SMBv1: Disabled (Windows Server 2022 default)
 - SMB Compression: Disabled
-- Cipher Suite Order: Enforced
+
+## Cipher Suite
+
+- Honor cipher suite order: Enabled
+
+## Purpose
+
+Implements modern security standards and reduces attack surface.
