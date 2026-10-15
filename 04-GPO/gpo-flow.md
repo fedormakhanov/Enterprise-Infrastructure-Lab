@@ -1,3 +1,4 @@
+```
                      ┌───────────────────────────┐
                      │      Domain Controller    │
                      │         SRV-DC01          │
@@ -39,3 +40,4 @@
                      │  (Firewall, Wallpaper,    │
                      │   Control Panel, etc.)    │
                      └───────────────────────────┘
+```
