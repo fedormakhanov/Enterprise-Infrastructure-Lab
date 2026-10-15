@@ -1,126 +1,92 @@
-# Enterprise-Infrastructure-Lab
-Enterprise-grade IT infrastructure lab featuring Windows Server 2022, Cisco Catalyst 3650, VLAN/L3 routing, ACL security, Hyper‑V virtualization, Syslog/SNMP monitoring, and full documentation.
+# Enterprise Infrastructure Lab (Windows Server 2022 + Active Directory)
 
-
----
-
-Project Overview
-
-This repository contains a complete enterprise-style IT infrastructure implemented in a home lab environment.
-It demonstrates practical skills in:
-
-• Windows Server administration
-• Cisco Catalyst 3650 network engineering
-• Enterprise routing and segmentation
-• Security hardening with ACLs
-• Virtualization and monitoring
-• Infrastructure documentation and topology design
-
+This project demonstrates a full enterprise-grade Windows Server 2022 domain deployment.  
+It includes Active Directory Domain Services, DNS, OU architecture, Group Policy Objects,  
+security baselines, and workstation management — replicating a real corporate environment  
+for IT Support / Junior SysAdmin roles.
 
 ---
 
-Technology Stack
+## Domain Architecture
 
-• Windows Server 2022
-• Cisco Catalyst 3650 (IOS XE)
-• Active Directory / DNS / DHCP
-• Hyper‑V Virtualization
-• VLAN / SVI / L3 Routing
-• ACL Firewall
-• QoS
-• Syslog / SNMP
-• Zabbix Monitoring
-• OpenVPN / WireGuard
-
+- Domain Controller: **SRV-DC01**
+- Domain: **corp.local**
+- IP: **192.168.10.10**
+- DNS: **192.168.10.10**
+- Gateway: **192.168.10.1**
+- OS: Windows Server 2022
 
 ---
 
-Repository Structure
+## Organizational Unit Structure
 
-• /Windows-Server/ — Windows Server configuration and projects
-• /Cisco-3650/ — Cisco IOS XE configs and network projects
-• /Monitoring/ — Syslog, SNMP, Zabbix
-• /Topology/ — network diagrams and architecture
-• /Documentation/ — reports, screenshots, notes
-• /Configs/ — PowerShell scripts and Cisco configs
-
-
----
-
-Windows Server Projects
-
-• Active Directory Domain Services
-• DNS
-• DHCP
-• File Server (SMB + NTFS)
-• WSUS
-• Hyper‑V
-• GPO
-• VPN
-• Syslog Integration
-
+corp.local
+└── Corp
+├── Corp Users
+├── Corp Computers
+├── Admins
+├── Servers
+└── Service Accounts
 
 ---
 
-Cisco Catalyst 3650 Projects
+## Users & Groups
 
-• VLAN Segmentation
-• Inter‑VLAN Routing (SVI)
-• ACL Firewall
-• DHCP Relay
-• QoS
-• SNMP Monitoring
-• Syslog Forwarding
+### Standard User
+- **user1**
+- OU: Corp Users
 
-
----
-
-Network Topology
-
-Enterprise network architecture:
-
-• Netgear → Cisco Catalyst 3650 → Windows Server → Clients
-• VLAN segmentation (Servers, Clients, Management, Guest, IoT)
-• L3 routing via SVI
-• ACL firewall between zones
-• Wi‑Fi via ASUS AP Mode
-
+### Administrator
+- **admin1**
+- OU: Admins
+- Group: Domain Admins
 
 ---
 
-Documentation
+## Group Policy Objects
 
-Located in /Documentation:
+### 1. Password Policy (Domain Level)
+- Minimum length: 12
+- Complexity: Enabled
+- Max age: 90 days
+- Lockout threshold: 5 attempts
 
-• Cisco configurations
-• PowerShell commands
-• Network diagrams
-• Screenshots
-• Project notes and reports
+### 2. Desktop Policy (Corp Users)
+- Control Panel: Disabled
+- Wallpaper: Enforced
 
-
----
-
-Project Goals
-
-• Build a realistic enterprise infrastructure
-• Demonstrate network engineering and sysadmin skills
-• Prepare for CCNA / Network+
-• Create a professional portfolio
-• Show expertise in Windows Server + Cisco Catalyst
-
+### 3. Security Baseline (Corp Computers)
+- Windows Firewall: Enabled
+- SMBv1: Disabled (Server 2022 default)
+- SMB Compression: Disabled
+- Cipher Suite Order: Enforced
 
 ---
 
-Author
+## Client Configuration
 
-pishi — Network Engineer / SysAdmin (Home Lab)
-
----
-
-Status
-
-Project is under active development.
+- Domain join
+- GPO application verification
+- Security baseline enforcement
 
 ---
 
+## Purpose of the Project
+
+This lab simulates a real corporate Windows environment and demonstrates skills in:
+
+- Windows Server administration  
+- Active Directory  
+- DNS  
+- Group Policy  
+- Security hardening  
+- Enterprise documentation  
+
+Suitable for IT Support, Junior SysAdmin, and Infrastructure roles.
+
+---
+
+## Author
+
+**Fedor Makhanov** — Aspiring IT Support / Junior SysAdmin  
+Building enterprise-grade infrastructure labs and preparing for corporate IT roles.
