@@ -11,3 +11,9 @@ corp.local
     ├── Servers             - Server objects (future expansion)
     └── Service Accounts    - Non-human accounts for services and automation
 ```
+
+## Purpose
+
+- Simplifies GPO targeting
+- Improves security and access control
+- Matches real corporate AD design
