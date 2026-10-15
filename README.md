@@ -20,13 +20,15 @@ for IT Support / Junior SysAdmin roles.
 
 ## Organizational Unit Structure
 
-'''corp.local
+```
+corp.local
 └── Corp
     ├── Corp Users
     ├── Corp Computers
     ├── Admins
     ├── Servers
-    └── Service Accounts'''
+    └── Service Accounts
+```
 
 ---
 
