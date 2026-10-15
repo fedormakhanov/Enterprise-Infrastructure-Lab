@@ -23,3 +23,15 @@ DNS: 192.168.10.10               DNS: 192.168.10.10
 Flow:
 - CLIENT-01 → SRV-DC01: Kerberos / LDAP / DNS / GPO
 - SRV-DC01 → Router: DNS forwarders (Internet resolution)
+
+
+# Active Directory Logical Structure
+```
+corp.local
+└── Corp
+    ├── Corp Users
+    ├── Corp Computers
+    ├── Admins
+    ├── Servers
+    └── Service Accounts
+```
